@@ -1,0 +1,20 @@
+{
+  "name": "knives-shop-mockup",
+  "version": "1.0.0",
+  "description": "Study &amp; Practice (Angular 1.x, Gulp, Sass, Bootstrap)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kozakevych/knives-shop-mockup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kozakevych/knives-shop-mockup/issues"
+  },
+  "homepage": "https://github.com/kozakevych/knives-shop-mockup#readme"
+}
