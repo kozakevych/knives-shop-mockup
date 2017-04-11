@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Spyderco Knives Buy</title>
+	<script src="../node_modules/angular/angular.js"></script>
+	<script src="app.js"></script>
+</head>
+<body ng-app="testapp">
+	<div ng-controller="sayren">
+		<ul>
+			<li ng-repeat="knife in knives" style="width: 300px;display: inline-block;">
+				<div>
+
+					<img src="{{ knife.img }}" alt=""><br>
+					<span>{{ knife.title }}</span><br>
+					<span>{{ knife.price }}</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

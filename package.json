@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kozakevych/knives-shop-mockup/issues"
   },
-  "homepage": "https://github.com/kozakevych/knives-shop-mockup#readme"
+  "homepage": "https://github.com/kozakevych/knives-shop-mockup#readme",
+  "devDependencies": {
+    "angular": "^1.6.4"
+  }
 }
