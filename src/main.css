@@ -1,0 +1,13 @@
+ul.knives {
+	display: flex;
+	list-style-type: none;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+div.knive-container {
+	margin: 50px;
+	width: 165px;
+	display: flex;
+	flex-direction: column;
+}

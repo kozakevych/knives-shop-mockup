@@ -1,23 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="kniveApp">
 <head>
 	<meta charset="UTF-8">
 	<title>Spyderco Knives Buy</title>
+	<link rel="stylesheet" href="main.css">
 	<script src="../node_modules/angular/angular.js"></script>
-	<script src="app.js"></script>
+	<script src="../node_modules/angular-route/angular-route.js"></script>
+	<script src="js/app.module.js"></script>
+	<script src="js/knive-list/knive-list.module.js"></script>
+	<script src="js/knive-list/knive-list.component.js"></script>
 </head>
-<body ng-app="testapp">
-	<div ng-controller="sayren">
-		<ul>
-			<li ng-repeat="knife in knives" style="width: 300px;display: inline-block;">
-				<div>
+<body>
 
-					<img src="{{ knife.img }}" alt=""><br>
-					<span>{{ knife.title }}</span><br>
-					<span>{{ knife.price }}</span>
-				</div>
-			</li>
-		</ul>
-	</div>
+	<knive-list></knive-list>
+
 </body>
 </html>
