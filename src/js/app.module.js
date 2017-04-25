@@ -7,5 +7,7 @@
 */
 
 angular.module('kniveApp', [
+    'ngRoute',
+    'kniveDetail',
     'kniveList'
 ]);

@@ -14,10 +14,10 @@
 			<li ng-repeat="knife in $ctrl.knives | filter:$ctrl.query | orderBy:$ctrl.orderProp">
 				<div class="knive-container">
 
-					<a href="#/knives/{{knife.id}}">
+					<a href="#!/knives/{{knife.id}}">
 						<img src="{{knife.img}}" alt="{{knife.title}}" />
 					</a>
-					<a href="#/knives/{{knife.id}}">
+					<a href="#!/knives/{{knife.id}}">
 						{{knife.title}}
 					</a>
 					<span>{{knife.price | currency}}</span>

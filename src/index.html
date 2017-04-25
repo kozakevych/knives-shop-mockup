@@ -3,16 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Spyderco Knives Buy</title>
+
+	<link rel="icon" type="image/png" href="img/knife-favicon.ico">
 	<link rel="stylesheet" href="main.css">
+
 	<script src="../node_modules/angular/angular.js"></script>
 	<script src="../node_modules/angular-route/angular-route.js"></script>
+
 	<script src="js/app.module.js"></script>
+	<script src="js/app.config.js"></script>
+
 	<script src="js/knive-list/knive-list.module.js"></script>
 	<script src="js/knive-list/knive-list.component.js"></script>
+
+
+	<script src="js/knive-detail/knive-detail.module.js"></script>
+	<script src="js/knive-detail/knive-detail.component.js"></script>
 </head>
 <body>
 
-	<knive-list></knive-list>
+	<div ng-view></div>
 
 </body>
 </html>
