@@ -7,7 +7,6 @@ ul.knives {
 
 div.knive-container {
 	margin: 50px;
-	width: 165px;
 	display: flex;
 	flex-direction: column;
 }

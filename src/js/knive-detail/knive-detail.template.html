@@ -1,1 +1,21 @@
 <!-- make a template here -->
+
+<div>
+
+	<img ng-src="{{$ctrl.i.img}}" alt="{{$ctrl.i.title}}" />
+	<span>
+		{{$ctrl.i.title}}
+	</span>
+	<span>{{$ctrl.i.price | currency}}</span>
+
+</div>
+
+
+<img src="{{$ctrl.companies[$ctrl.companyName].logopath}}" alt="">
+	<h3>About company {{$ctrl.companyName | capitalize}}:</h3>
+	<p>
+		{{$ctrl.companies[$ctrl.companyName].description}}
+	</p>
+</div>
+
+
