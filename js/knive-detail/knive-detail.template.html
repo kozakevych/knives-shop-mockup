@@ -1,0 +1,39 @@
+<div class="container">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Knife Shop Mockup</a>
+    </div>
+  </div>
+</nav>
+
+<div class="content" style="margin-top:80px">
+	<div class="row">
+	<div class="thumbnail col-xs-12 col-sm-offset-2 col-sm-9 col-md-offset-3 col-md-7 col-lg-offset-3 col-lg-6">
+		<img ng-src="{{$ctrl.i.img}}" alt="{{$ctrl.i.title}}" width="200px"/>
+		<div class="caption">
+		<h4>
+			{{$ctrl.i.title}}
+		</h4>
+
+		<button class="btn btn-danger disabled btn-lg" style="cursor:default; outline:none;">{{$ctrl.i.price | currency}}</button>
+		<button class="btn btn-success btn-lg" style="outline:none;" role="button">Buy</button>
+
+	    </div>
+    </div>
+	</div>
+
+	<div class="row">
+
+	<div class="thumbnail col-xs-12 col-sm-offset-2 col-sm-9 col-md-offset-3 col-md-7 col-lg-offset-3 col-lg-6">
+
+		<img class="pull-left" src="{{$ctrl.companies[$ctrl.companyName].logopath}}" alt="{{$ctrl.companyName}}" width="200px">
+		<p class="col-lg-7 col-md-7 col-sm-7 col-xs-10">
+			{{$ctrl.companies[$ctrl.companyName].description}}
+		</p>
+	</div>
+	</div>
+</div>
+
+</div>
+

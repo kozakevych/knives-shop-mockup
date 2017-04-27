@@ -1,7 +1,7 @@
 {
   "name": "knives-shop-mockup",
   "version": "1.0.0",
-  "description": "Study &amp; Practice (Angular 1.x, Gulp, Sass, Bootstrap)",
+  "description": "Study &amp; Practice (Angular 1.x, Bootstrap)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +19,8 @@
   "homepage": "https://github.com/kozakevych/knives-shop-mockup#readme",
   "devDependencies": {
     "angular": "^1.6.4",
-    "angular-route": "^1.6.4"
+    "angular-route": "^1.6.4",
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1"
   }
 }

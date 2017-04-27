@@ -1,0 +1,33 @@
+<div class="container">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Knife Shop Mockup</a>
+    </div>
+    <form class="navbar-form navbar-left">
+        <div class="form-group">
+			<input class="form-control" ng-model="$ctrl.query" type="text" placeholder="Search">
+        </div>
+    </form>
+	<ul class="nav navbar-nav navbar-right">
+		<select class="navbar-text" ng-model="$ctrl.orderProp" style="color: #000">
+			<option value="title">Alphabetical</option>
+			<option value="price">Price</option>
+		</select>
+	</ul>
+  </div>
+</nav>
+
+	<div style="margin-top:80px">
+
+		    <div class="thumbnail col-xs-12 col-sm-6 col-md-4 col-lg-3" ng-repeat="knife in $ctrl.knives | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+		      <img ng-src="{{knife.img}}" alt="{{knife.title}}"/>
+		      <div class="caption">
+		        <h4>{{knife.title | limitTo:40}}...</h4>
+
+		        <p><span class="btn btn-danger disabled" style="cursor:default; outline:none;">{{knife.price | currency}}</span> <a href="#!/knives/{{knife.id}}"" class="btn btn-success" style="outline:none;" role="button">Buy</a></p>
+		      </div>
+		    </div>
+
+	</div>
+</div>
