@@ -11,9 +11,3 @@ angular.module('kniveApp', [
     'kniveDetail',
     'kniveList'
 ]);
-
-angular.module('kniveApp').factory('knifeInfo', function(){
-  var info = {};
-
-  return info;
-});
